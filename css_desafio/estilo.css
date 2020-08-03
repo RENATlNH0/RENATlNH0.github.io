@@ -1,0 +1,306 @@
+/*CONFIGURAÇÕES INICIAS*/
+html, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*MENU*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CA146;
+    border-bottom: 2px black solid;
+}
+#img_menu{
+    border: 2.5px black solid;
+    border-radius: 10px;
+    width:10vh;
+    margin: 10px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+li{
+    font: normal 20pt Bebas Neue;
+    padding: 0px 20px;
+}
+li:hover{
+    border-bottom: 2px black solid;
+    font-size: 25pt;
+}
+.links{
+    color: white;
+    text-decoration:none;
+}
+/*CAPA*/
+.centro{
+    display: flex;
+    justify-content: center;
+}
+.capa{
+    background-color: #75BE6E;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+.font{
+    font: normal 25pt Bebas Neue;
+}
+.sub_titulo_capa{
+    border-top: 2px black solid;
+    padding-top: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+/*SEÇÃO SITUAÇÃO*/
+.margin20{
+    box-shadow: 5px 8px 7.5px black;
+    margin-left: 20%;    
+    margin-right: 20%;
+    border-radius: 20px;
+}
+.titulo{
+    text-align: center;
+    background-color: #4CA146;
+    border-bottom: 2px black solid;
+    border-radius: 20px;
+}
+.sub_titulo_entenda u{
+    font: normal 20pt Bebas Neue;
+    text-decoration-color: green;
+    padding-left: 10px;
+}
+.paragrafo_entenda{
+    font: normal 15pt Bebas Neue;
+    text-align: justify;
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+/*SEÇÃO SAIBA MAIS*/
+.video{
+    padding: 0 10px;
+    width: 30%;
+}
+/*SEÇÃO AJUDA GESTANTE*/
+.div_ajuda_gestante{
+    background-color:#75BE6E;
+    display:flex;
+    justify-content: space-around;
+}
+.width_texto{
+    width: 30%;
+}
+.h4_titulo{
+    padding-top: 70px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.width_texto_esquerdo hr{
+    width: 50px;
+    border: 1px white solid;
+}
+.p_ajuda{
+    font: normal 20pt Bebas Neue;
+}
+.img_direita{
+    max-width: 100%;
+}
+/*SEÇÃO AJUDA SAÚDE PUBLICA*/
+.div_ajuda_saude_publica{
+    background-color: #4CA146;
+    display: flex;
+    justify-content: space-around;
+}
+.img_esquerda{
+    max-width: 100%;
+}
+.width_texto_direito hr{
+    width: 50px;
+    border: 1px white solid;
+}
+a{
+    color: black;
+    text-decoration:none;
+}
+a:hover{
+    font-size: 25pt;
+}
+/*SEÇÃO AJUDA SAÚDE MENTAL*/
+.div_ajuda_saude_mental{
+    background-color: #75BE6E;
+    display: flex;
+    justify-content: space-between;
+}
+.div_ajuda_saude_mental hr{
+    width: 50px;
+    border: 1px white solid;
+}
+.img_saude_mental{
+    align-items: flex-end;
+    max-width: 100%;
+}
+.img_saude_mental2{
+    align-items: flex-start;
+    max-width: 100%;
+}
+/*RODAPÉ QUEM SOU?*/
+#rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e0dfec;
+    padding: 20px 0;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+}
+h5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#hr_quem_sou{
+    border:1px black solid;
+}
+.div_quem_sou{
+    margin: 10px;
+    text-align: justify;
+    font: normal 20pt Bebas Neue;
+}
+#img_quem_sou{
+    margin: 10px;
+    border: 5px black solid;
+    border-radius: 180px;
+}
+#p_divulgacao{
+    text-align: center;
+}
+.divulgacao{
+    width: 25px;
+    padding: 0 40px;
+}
+/*CRÉDITOS*/
+#div_credito{
+    background-color: #e0dfec;
+    text-align: center;
+}
+h6{
+    padding-top: 30px;
+    margin: 0 auto;
+}
+hr{
+    width: 50px;
+    border: 1px black solid;
+}
+#p_credito{
+    margin-bottom: 0;
+    font: normal 20pt Bebas Neue;
+}
+/*RESPONSIVIDADE*/
+@media all and (max-width: 870px) {
+    /*MENU*/
+    #img_menu{
+        width: 5vh;
+    }
+    li{
+        padding-right: 5px;
+    }
+    .font_a{
+        font-size: 10pt;
+    }
+    /*CAPA*/
+    .font{
+        font-size: 15pt;
+    }
+    #img_capa{
+        max-width: 50%;
+    }
+    /*SEÇÃO SITUAÇÃO*/
+    .sub_titulo_entenda u{
+        font-size: 15pt;
+    }
+    .paragrafo_entenda{
+        font-size: 10pt;
+    }
+    /*SEÇÃO SAIBA MAIS*/
+    .centro{
+        flex-direction: column;
+    }
+    .video{
+        padding-top: 10px;
+        margin: 0 auto;
+        width:80%;
+    }
+    /*SEÇÃO AJUDA GESTANTE*/
+    .width_texto_esquerdo{
+        margin-left: 7.5%;
+    }
+    .p_ajuda{
+        flex-direction: column;
+        font-size: 10pt;
+    }
+    .div_img_direita{
+        margin-left: auto;
+        margin-top: auto;
+    }
+    .img_direita{
+        max-width: 15vh;
+    }
+    /*SEÇÃO AJUDA SAÚDE PUBLICA*/
+    .width_texto_direito{
+        margin-right: 5%;
+    }
+    .div_img_esquerda{
+        padding: 0 10px;
+        margin-right: auto;
+        margin-top: auto;
+    }
+    .img_esquerda{
+        max-width: 25vh;
+    }
+    a{
+        text-decoration: underline;
+    }
+    a:hover{
+        font-size: 15pt;
+    }
+    /*SEÇÃO AJUDA SAÚDE MENTAL*/
+    .div_p_saude_mental{
+        text-align: center;
+    }
+    .img_saude_mental{
+        max-width: 60%;
+    }
+    .img_saude_mental2{
+        max-width: 60%;
+    }
+    /*RODAPÉ QUEM SOU?*/
+    #rodape{
+        display: flex;
+        flex-direction: column;
+    }
+    #img_quem_sou{
+        max-width: 125px;
+        border: 2.5px black solid;
+    }
+    h5{
+        margin: 10px 0;
+    }
+    .div_quem_sou{
+        margin: 0;
+        text-align: center;
+        font: normal 10pt Bebas Neue;
+    }
+    .divulgacao{
+        width: 15px;
+        padding: 0 20px;
+    }
+    /*CRÉDITOS*/
+    #p_credito{
+        font-size: 10pt;
+    }
+}

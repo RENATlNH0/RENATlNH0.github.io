@@ -20,9 +20,9 @@ header{
 }
 .menu{
     display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
-    padding: 10px 0;
 }
 li{
     font: normal 20pt Bebas Neue;
@@ -43,9 +43,8 @@ li:hover{
 }
 .capa{
     background-color: #75BE6E;
-    margin: 0;
-    flex-direction: column;
     text-align: center;
+    margin: 0;
     height: 100%;
 }
 .font{
@@ -82,6 +81,10 @@ li:hover{
     text-decoration: none;
     color: black;
 }
+.a_situação:hover{
+    font-size: 20pt;
+    transition: 0.5s;
+}
 /*SEÇÃO SAIBA MAIS*/
 .video{
     padding: 0 10px;
@@ -89,21 +92,18 @@ li:hover{
 }
 /*SEÇÃO AJUDA GESTANTE*/
 .div_ajuda_gestante{
-    background-color:#75BE6E;
+    background-color: #75BE6E;
     display:flex;
     justify-content: space-around;
 }
-.width_texto{
-    width: 30%;
+.hr_branco{
+    width: 50px;
+    border: 1px white solid;
 }
 .h4_titulo{
     padding-top: 70px;
     margin-bottom: 0;
     text-align: center;
-}
-.width_texto_esquerdo hr{
-    width: 50px;
-    border: 1px white solid;
 }
 .p_ajuda{
     font: normal 20pt Bebas Neue;
@@ -120,26 +120,19 @@ li:hover{
 .img_esquerda{
     max-width: 100%;
 }
-.width_texto_direito hr{
-    width: 50px;
-    border: 1px white solid;
-}
 a{
     color: black;
     text-decoration:none;
 }
-a:hover{
+.width_texto_direito a:hover{
     font-size: 25pt;
+    transition: 0.5s;
 }
 /*SEÇÃO AJUDA SAÚDE MENTAL*/
 .div_ajuda_saude_mental{
     background-color: #75BE6E;
     display: flex;
     justify-content: space-between;
-}
-.div_ajuda_saude_mental hr{
-    width: 50px;
-    border: 1px white solid;
 }
 .img_saude_mental{
     align-items: flex-end;
@@ -149,32 +142,33 @@ a:hover{
     align-items: flex-start;
     max-width: 100%;
 }
-/*RODAPÉ QUEM SOU?*/
-#rodape{
+/*QUEM SOU?*/
+.section_quem_sou{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e0dfec;
+    background-color: #fff;
     padding: 20px 0;
     border-top: 5px black solid;
     border-bottom: 5px black solid;
-}
-h5{
-    text-align: center;
-    margin-bottom: 20px;
-}
-#hr_quem_sou{
-    border:1px black solid;
-}
-.div_quem_sou{
-    margin: 10px;
-    text-align: justify;
-    font: normal 20pt Bebas Neue;
 }
 #img_quem_sou{
     margin: 10px;
     border: 5px black solid;
     border-radius: 180px;
+}
+h5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hr_preto{
+    width: 50px;
+    border:1px black solid;
+}
+.div_p_quem_sou{
+    margin: 10px;
+    text-align: justify;
+    font: normal 20pt Bebas Neue;
 }
 #p_divulgacao{
     text-align: center;
@@ -183,31 +177,42 @@ h5{
     width: 25px;
     padding: 0 40px;
 }
-/*CRÉDITOS*/
-#div_credito{
-    background-color: #e0dfec;
-    text-align: center;
+/*FIM DO SITE*/
+footer{
+    background-color: #ABD97B;
+    display:flex;
+    justify-content: space-around;
+}
+.div_fim_site{
+    text-align: start;
+    font: normal 15pt Bebas Neue;
+    padding: 30px 75px;
+}
+.hr_footer{
+    margin-left: 20px;
 }
 h6{
-    padding-top: 30px;
+    padding-left: 20px;
     margin: 0 auto;
 }
-hr{
-    width: 50px;
-    border: 1px black solid;
+.h6_credito{
+    padding-left: 0;
 }
-#p_credito{
-    margin-bottom: 0;
+.p_fim{
     font: normal 20pt Bebas Neue;
 }
 /*RESPONSIVIDADE*/
 @media all and (max-width: 870px) {
     /*MENU*/
+    ul{
+        padding-inline-start: 0px;
+    }
     #img_menu{
         width: 5vh;
+        margin-left: 1.5px;
     }
     li{
-        padding-right: 5px;
+        padding-right: 0px;
     }
     .font_a{
         font-size: 10pt;
@@ -221,10 +226,14 @@ hr{
     }
     /*SEÇÃO SITUAÇÃO*/
     .sub_titulo_entenda u{
-        font-size: 15pt;
+        font-size: 12.5pt;
     }
     .paragrafo_entenda{
         font-size: 10pt;
+    }
+    .a_situação:hover{
+        font-size: 15pt;
+        transition: 0.5s;
     }
     /*SEÇÃO SAIBA MAIS*/
     .centro{
@@ -233,40 +242,40 @@ hr{
     .video{
         padding-top: 10px;
         margin: 0 auto;
-        width:80%;
+        width:60%;
     }
     /*SEÇÃO AJUDA GESTANTE*/
     .width_texto_esquerdo{
         margin-left: 7.5%;
     }
     .p_ajuda{
-        flex-direction: column;
         font-size: 10pt;
     }
     .div_img_direita{
-        margin-left: auto;
         margin-top: auto;
     }
     .img_direita{
-        max-width: 15vh;
+        max-height: 175px;
     }
     /*SEÇÃO AJUDA SAÚDE PUBLICA*/
     .width_texto_direito{
-        margin-right: 5%;
+        margin-right: 7.5%;
+    }
+    .h4_titulo{
+        padding-top:0;
     }
     .div_img_esquerda{
-        padding: 0 10px;
-        margin-right: auto;
         margin-top: auto;
     }
     .img_esquerda{
-        max-width: 25vh;
+        max-height: 200px;
     }
-    a{
+    .width_texto_direito a{
         text-decoration: underline;
     }
-    a:hover{
-        font-size: 15pt;
+    .width_texto_direito a:hover{
+        font-size: 12.5pt;
+        transition: 0.5s;
     }
     /*SEÇÃO AJUDA SAÚDE MENTAL*/
     .div_p_saude_mental{
@@ -278,8 +287,8 @@ hr{
     .img_saude_mental2{
         max-width: 60%;
     }
-    /*RODAPÉ QUEM SOU?*/
-    #rodape{
+    /*QUEM SOU?*/
+    .section_quem_sou{
         display: flex;
         flex-direction: column;
     }
@@ -290,17 +299,33 @@ hr{
     h5{
         margin: 10px 0;
     }
-    .div_quem_sou{
-        margin: 0;
+    .div_p_quem_sou{
+        margin: 0 10px;
         text-align: center;
-        font: normal 10pt Bebas Neue;
+        font: normal 12.5pt Bebas Neue;
     }
     .divulgacao{
         width: 15px;
         padding: 0 20px;
     }
-    /*CRÉDITOS*/
-    #p_credito{
-        font-size: 10pt;
+    /*FIM DO SITE*/
+    .div_fim_site{
+        margin: 0 10px;
+        text-align: start;
+        font: normal 15pt Bebas Neue;
+        padding: 30px 0px;
+    }
+    .hr_footer{
+        margin-left: 20px;
+    }
+    h6{
+        padding-left: 30px;
+        margin: 0 auto;
+    }
+    .h6_credito{
+        padding-left: 15px;
+    }
+    .p_fim{
+        font: normal 12.5pt Bebas Neue;
     }
 }

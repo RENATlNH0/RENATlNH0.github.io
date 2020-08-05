@@ -208,8 +208,8 @@ h6{
         padding-inline-start: 0px;
     }
     #img_menu{
-        width: 5vh;
-        margin-left: 1.5px;
+        width: 7.5vh;
+        margin-left: 5px;
     }
     li{
         font: normal 8pt Bebas Neue;
@@ -328,5 +328,12 @@ h6{
     }
     .p_fim{
         font: normal 12.5pt Bebas Neue;
+    }
+}
+@media all and (max-width: 300px) {
+    /*MENU*/
+    #img_menu{
+        width: 5vh;
+        margin-left: 1.5px;
     }
 }

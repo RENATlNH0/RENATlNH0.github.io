@@ -15,7 +15,7 @@ header{
 #img_menu{
     border: 2.5px black solid;
     border-radius: 10px;
-    width:10vh;
+    width:15vh;
     margin: 10px;
 }
 .menu{
@@ -47,14 +47,14 @@ li:hover{
     margin: 0;
     height: 100%;
 }
-.font{
-    font: normal 25pt Bebas Neue;
+h1{
+    font: normal 30pt Bebas Neue;
 }
 .sub_titulo_capa{
-    border-top: 2px black solid;
+    font: normal 20pt Bebas Neue;
     padding-top: 10px;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 /*SEÇÃO SITUAÇÃO*/
 .margin20{
@@ -62,6 +62,9 @@ li:hover{
     margin-left: 20%;    
     margin-right: 20%;
     border-radius: 20px;
+}
+.font{
+    font: normal 25pt Bebas Neue;
 }
 .titulo{
     text-align: center;
@@ -82,6 +85,7 @@ li:hover{
     color: black;
 }
 .a_situação:hover{
+    color:red;
     font-size: 20pt;
     transition: 0.5s;
 }
@@ -219,7 +223,10 @@ h6{
         font-size: 10pt;
     }
     /*CAPA*/
-    .font{
+    h1{
+        font-size: 22.5pt;
+    }
+    .sub_titulo_capa{
         font-size: 15pt;
     }
     #img_capa{
@@ -246,30 +253,39 @@ h6{
         width:60%;
     }
     /*SEÇÃO AJUDA GESTANTE*/
+    .div_ajuda_gestante{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .h4_titulo{
+        padding-top:0;
+    }
     .width_texto_esquerdo{
-        margin-left: 7.5%;
+        text-align: center;
     }
     .p_ajuda{
         font-size: 10pt;
     }
     .div_img_direita{
-        margin-top: auto;
+        margin-bottom: 0;
+        text-align:center;
     }
     .img_direita{
         max-height: 175px;
     }
     /*SEÇÃO AJUDA SAÚDE PUBLICA*/
-    .width_texto_direito{
-        margin-right: 7.5%;
+    .div_ajuda_saude_publica{
+        display: flex;
+        flex-direction: column;
     }
-    .h4_titulo{
-        padding-top:0;
+    .width_texto_direito{
+        text-align: center;
     }
     .div_img_esquerda{
-        margin-top: auto;
+        text-align: center;
     }
     .img_esquerda{
-        max-height: 200px;
+        max-height: 175px;
     }
     .width_texto_direito a{
         text-decoration: underline;
@@ -279,19 +295,26 @@ h6{
         transition: 0.5s;
     }
     /*SEÇÃO AJUDA SAÚDE MENTAL*/
+    .div_ajuda_saude_mental{
+        display:flex;
+        flex-direction: column;
+    }
     .div_p_saude_mental{
         text-align: center;
     }
+    .div_img_saude_mental{
+        text-align: center;
+    }
     .img_saude_mental{
-        max-width: 60%;
+        max-width: 100px;
     }
     .img_saude_mental2{
-        max-width: 60%;
+        max-width: 0;
     }
     /*QUEM SOU?*/
     .section_quem_sou{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #img_quem_sou{
         max-width: 125px;

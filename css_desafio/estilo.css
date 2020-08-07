@@ -24,17 +24,15 @@ header{
     list-style: none;
     margin: 0;
 }
-li{
+.links{
     font: normal 20pt Bebas Neue;
     padding: 0px 20px;
-}
-li:hover{
-    border-bottom: 2px black solid;
-    font-size: 25pt;
-}
-.links{
     color: white;
     text-decoration:none;
+}
+.links:hover{
+    border-bottom: 2px black solid;
+    font-size: 25pt;
 }
 /*CAPA*/
 .centro{
@@ -47,10 +45,14 @@ li:hover{
     margin: 0;
     height: 100%;
 }
-h1{
+#titulo_capa{
     font: normal 30pt Bebas Neue;
 }
-.sub_titulo_capa{
+.hr_preto{
+    width: 50px;
+    border:1px black solid;
+}
+#sub_titulo_capa{
     font: normal 20pt Bebas Neue;
     padding-top: 10px;
     margin-left: 20%;
@@ -85,8 +87,8 @@ h1{
     color: black;
 }
 .a_situação:hover{
-    color:red;
     font-size: 20pt;
+    color:red;
     transition: 0.5s;
 }
 /*SEÇÃO SAIBA MAIS*/
@@ -95,25 +97,28 @@ h1{
     width: 30%;
 }
 /*SEÇÃO AJUDA GESTANTE*/
-.div_ajuda_gestante{
+.div_ajuda_gestante_saude_mental{
     background-color: #75BE6E;
     display:flex;
     justify-content: space-around;
+}
+.h4_ajuda{
+    padding-top: 35px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .hr_branco{
     width: 50px;
     border: 1px white solid;
 }
-.h4_titulo{
-    padding-top: 70px;
-    margin-bottom: 0;
-    text-align: center;
-}
 .p_ajuda{
     font: normal 20pt Bebas Neue;
 }
+.div_img_direita{
+    margin-top: auto;
+}
 .img_direita{
-    max-width: 100%;
+    max-width: 85%;
 }
 /*SEÇÃO AJUDA SAÚDE PUBLICA*/
 .div_ajuda_saude_publica{
@@ -121,8 +126,11 @@ h1{
     display: flex;
     justify-content: space-around;
 }
+.div_img_esquerda{
+    margin-top: auto;
+}
 .img_esquerda{
-    max-width: 100%;
+    max-width: 80%;
 }
 a{
     color: black;
@@ -133,17 +141,10 @@ a{
     transition: 0.5s;
 }
 /*SEÇÃO AJUDA SAÚDE MENTAL*/
-.div_ajuda_saude_mental{
-    background-color: #75BE6E;
-    display: flex;
-    justify-content: space-between;
-}
 .img_saude_mental{
-    align-items: flex-end;
     max-width: 100%;
 }
-.img_saude_mental2{
-    align-items: flex-start;
+.img_saude_menta2{
     max-width: 100%;
 }
 /*QUEM SOU?*/
@@ -156,18 +157,9 @@ a{
     border-top: 5px black solid;
     border-bottom: 5px black solid;
 }
-#img_quem_sou{
-    margin: 10px;
-    border: 5px black solid;
-    border-radius: 180px;
-}
 h5{
     text-align: center;
     margin-bottom: 20px;
-}
-.hr_preto{
-    width: 50px;
-    border:1px black solid;
 }
 .div_p_quem_sou{
     margin: 10px;
@@ -180,6 +172,11 @@ h5{
 .divulgacao{
     width: 25px;
     padding: 0 40px;
+}
+#img_quem_sou{
+    margin: 10px;
+    border: 5px black solid;
+    border-radius: 180px;
 }
 /*FIM DO SITE*/
 footer{
@@ -195,6 +192,9 @@ footer{
 .hr_footer{
     margin-left: 20px;
 }
+.p_fim{
+    font: normal 20pt Bebas Neue;
+}
 h6{
     padding-left: 20px;
     margin: 0 auto;
@@ -202,37 +202,35 @@ h6{
 .h6_credito{
     padding-left: 0;
 }
-.p_fim{
-    font: normal 20pt Bebas Neue;
-}
 /*RESPONSIVIDADE*/
 @media all and (max-width: 870px) {
     /*MENU*/
-    ul{
-        padding-inline-start: 0px;
-    }
     #img_menu{
-        width: 7.5vh;
+        width: 10vh;
         margin-left: 5px;
     }
-    li{
-        font: normal 8pt Bebas Neue;
+    .links{
         padding: 0px 5px;
-    }
-    .font_a{
         font-size: 10pt;
     }
-    /*CAPA*/
-    h1{
-        font-size: 22.5pt;
-    }
-    .sub_titulo_capa{
+    .links:hover{
+        border-bottom: 2px black solid;
         font-size: 15pt;
+    }
+    /*CAPA*/
+    #titulo_capa{
+        font-size: 20pt;
+    }
+    #sub_titulo_capa{
+        font-size: 12.5pt;
     }
     #img_capa{
         max-width: 50%;
     }
     /*SEÇÃO SITUAÇÃO*/
+    .font{
+        font-size: 15pt;
+    }
     .sub_titulo_entenda u{
         font-size: 12.5pt;
     }
@@ -250,18 +248,22 @@ h6{
     .video{
         padding-top: 10px;
         margin: 0 auto;
-        width:60%;
+        width:50%;
     }
     /*SEÇÃO AJUDA GESTANTE*/
     .div_ajuda_gestante{
         display:flex;
         flex-direction:column-reverse;
     }
-    .h4_titulo{
+    .h4_ajuda{
+        margin-top: 0;
         padding-top:0;
     }
     .width_texto_esquerdo{
         text-align: center;
+    }
+    .marcador{
+        list-style: none;
     }
     .p_ajuda{
         font-size: 10pt;
@@ -342,6 +344,9 @@ h6{
     .hr_footer{
         margin-left: 20px;
     }
+    .p_fim{
+        font: normal 12.5pt Bebas Neue;
+    }
     h6{
         padding-left: 30px;
         margin: 0 auto;
@@ -349,14 +354,15 @@ h6{
     .h6_credito{
         padding-left: 15px;
     }
-    .p_fim{
-        font: normal 12.5pt Bebas Neue;
-    }
 }
 @media all and (max-width: 300px) {
     /*MENU*/
     #img_menu{
         width: 5vh;
         margin-left: 1.5px;
+    }
+    .links{
+        font: normal 8pt Bebas Neue;
+        padding: 0px 5px;
     }
 }

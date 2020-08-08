@@ -97,7 +97,7 @@ header{
     width: 30%;
 }
 /*SEÇÃO AJUDA GESTANTE*/
-.div_ajuda_gestante_saude_mental{
+.section_ajuda_gestante_saude_mental{
     background-color: #75BE6E;
     display:flex;
     justify-content: space-around;
@@ -157,14 +157,14 @@ a{
     border-top: 5px black solid;
     border-bottom: 5px black solid;
 }
-h5{
-    text-align: center;
-    margin-bottom: 20px;
-}
 .div_p_quem_sou{
     margin: 10px;
     text-align: justify;
     font: normal 20pt Bebas Neue;
+}
+h5{
+    text-align: center;
+    margin-bottom: 20px;
 }
 #p_divulgacao{
     text-align: center;
@@ -192,12 +192,12 @@ footer{
 .hr_footer{
     margin-left: 20px;
 }
-.p_fim{
-    font: normal 20pt Bebas Neue;
-}
 h6{
     padding-left: 20px;
     margin: 0 auto;
+}
+.p_fim{
+    font: normal 20pt Bebas Neue;
 }
 .h6_credito{
     padding-left: 0;
